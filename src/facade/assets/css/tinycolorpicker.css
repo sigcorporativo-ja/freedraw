@@ -1,0 +1,68 @@
+#colorPicker .track {
+    height: 150px;
+    background: white url(../../images/text-color.png) no-repeat 50% 50%;
+    width: 150px;
+    padding: 10px;
+    position: absolute;
+    cursor: crosshair;
+    float: left;
+    left: 0;
+    top: 31px;
+    display: none;
+    border: 1px solid #ccc;
+    z-index: 9999999999;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    border-radius: 150px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2), 0 -1px 0 rgba(0, 0, 0, .02);
+    z-index: 9999999999;
+}
+
+#colorPicker .color {
+    width: 20px;
+    height: 20px;
+    padding: 1px;
+    border: 1px solid #ccc;
+    display: block;
+    position: relative;
+    z-index: 11;
+    background-color: #dadada;
+    -webkit-border-radius: 27px;
+    -moz-border-radius: 27px;
+    border-radius: 27px;
+    cursor: pointer;
+}
+
+#colorPicker .colorInner {
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 27px;
+    -moz-border-radius: 27px;
+    border-radius: 27px;
+    background-color: #ffcc33;
+}
+
+#colorPicker .dropdown {
+    list-style: none;
+    display: none;
+    width: 27px;
+    position: absolute;
+    top: 28px;
+    border: 1px solid #ccc;
+    left: 0;
+    z-index: 1000;
+}
+
+#colorPicker .dropdown li {
+    height: 25px;
+    cursor: pointer;
+}
+
+#colorPicker {
+    padding: 8px;
+    cursor: pointer;
+    -webkit-transition: opacity .25s ease 0s;
+    transition: opacity .25s ease 0s;
+    color: #404040;
+    margin: 0;
+}
