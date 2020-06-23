@@ -28,10 +28,10 @@
     "name": "FreeDraw",
     "description": "Dibujo en el mapa.",
     "text": "Te permite dibujar diferentes geometrias en el mapa con diferentes colores.",
-    "version": "1.0.1",
-    "date": "Diciembre, 2019",
+    "version": "1.0.0",
+    "date": "Junio, 2020",
     "author": "",
-    "org": "Instituto de Estadística y Cartografía",
+    "org": "Consejería de Hacienda, Industria y Energía. Junta de Andalucía.",
     "tags": "mapea,plugin",
     "icon": "./facade/assets/icons/icons.svg",
     "centralized": true
