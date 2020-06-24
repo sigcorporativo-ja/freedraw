@@ -1,0 +1,132 @@
+.m-panel.m-freedrawing-tools.opened>button.m-panel-btn.g-cartografia-flecha-derecha,
+.m-panel.m-freedrawing-tools.left.opened>button.m-panel-btn.g-cartografia-flecha-izquierda {
+    background-color: #d5006e !important;
+    color: #fff;
+}
+
+
+.m-freedrawingpoligono-toolspanel>button.activated,
+.m-freedrawingpunto-toolspanel>button.activated,
+.m-freedrawinglinea-toolspanel>button.activated,
+.m-freedrawingtexto-toolspanel>button.activated {
+    color: #d5006e !important;
+}
+
+/*********************
+       CONTAINER
+*********************/
+
+.m-freedrawing-tools-container {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    text-align: left;
+    overflow-y: auto !important;
+    width: 100%;
+}
+
+@media only screen and (min-width: 769px) {
+    .m-freedrawing-tools-container {
+        width: 210;
+    }
+}
+
+
+/***************
+       PANEL
+***************/
+
+.m-areas>div.m-area>div.m-panel.m-freedrawing-tools>button.m-panel-btn {
+    color: white;
+    max-height: 40px;
+}
+
+.m-areas>div.m-area>div.m-panel.m-freedrawing-tools.collapsed>button.m-panel-btn {
+    color: #d5006e;
+}
+
+.m-areas>div.m-area>div.m-panel.m-freedrawing-right>button.m-panel-btn {
+    position: absolute;
+    left: -40px;
+    background-color: #4e92ce;
+    color: #fff;
+    z-index: 999999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 -1px 0px rgba(0, 0, 0, 0.02);
+}
+
+.m-areas>div.m-area>div.m-panel.m-freedrawing-tools.opened {
+    background-color: #f4f4f4;
+}
+
+@-moz-document url-prefix() {
+    .m-areas>div.m-area>div.m-panel.m-freedrawing-tools.opened {
+        z-index: 9999999 !important;
+    }
+}
+
+.m-areas>div.m-area>div.m-panel.m-freedrawing-tools {
+    order: -100;
+}
+
+.m-panel-controls .m-freedrawing-tools-panel {
+    display: flex !important;
+    flex-direction: row-reverse;
+}
+
+.m-areas>div.m-area>div.m-panel.m-freedrawing-tools {
+    max-height: 40px;
+}
+
+.m-freedrawing-tools-container .m-mapea-container input[type=text] {
+    margin: 0;
+}
+
+.tools-icon {
+    position: inherit !important;
+    overflow: hidden;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    display: table;
+}
+
+#m-feature-freedrawing-ftext {
+    margin: 0;
+}
+
+
+/****************************
+     IE HACK
+****************************/
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    #m-freedrawing-tools-icons-container {
+        z-index: 9999 !important;
+        display: inline-block !important;
+    }
+
+    #m-feature-freedrawing-fcolorfont {
+        vertical-align: top;
+        margin-top: 2px;
+    }
+}
+
+div.m-control button[class*=" g-cartografia-"],
+div.m-control button[class^=g-cartografia-] {
+    padding: 8px;
+    font-size: 24px;
+    background: 0 0;
+    border: none;
+    cursor: pointer;
+    opacity: .75;
+    -webkit-transition: opacity .25s ease 0s;
+    transition: opacity .25s ease 0s;
+    color: #404040;
+    margin: 0;
+}
+
+.m-freedrawing-dialog-button-active {
+    background-color: #949494;
+}
