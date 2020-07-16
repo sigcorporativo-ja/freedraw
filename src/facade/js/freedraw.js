@@ -18,7 +18,7 @@ export default class FreeDraw extends M.Plugin {
    * @param {Object} impl implementation object
    * @api stable
    */
-  constructor(options) {
+  constructor(options = {}) {
     super();
     /**
      * Facade of the map

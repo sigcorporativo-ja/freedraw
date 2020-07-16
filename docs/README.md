@@ -41,7 +41,7 @@ Plugin que permite dibujar puntos, líneas, polígonos y anotaciones sobre el ma
 ```
 ### Ejemplo 2
 ```javascript
-const mp = new M.plugin.FreeDraw({});
+const mp = new M.plugin.FreeDraw();
 
 map.addPlugin(mp);
 ```
