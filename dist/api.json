@@ -34,6 +34,7 @@
     "org": "Consejería de Hacienda, Industria y Energía. Junta de Andalucía.",
     "tags": "mapea,plugin",
     "icon": "./facade/assets/icons/icons.svg",
-    "centralized": true
+    "centralized": true,
+    "compatibility":["5","6"]
   }
 }
