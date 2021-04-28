@@ -27,6 +27,7 @@ export default class FreeDrawControl extends M.Control {
     this.editLayer = new M.layer.Vector({
       name: 'freeDrawLayer',
       source: {},
+      extract: false,
     });
     this.impl = impl;
   }
@@ -42,6 +43,7 @@ export default class FreeDrawControl extends M.Control {
   createView(map) {
     this.facadeMap_ = map;
     map.addLayers(this.editLayer);
+    map.getFeatureHandler().removeLayer(this.editLayer);
     return new Promise((success, fail) => {
       const html = M.template.compileSync(template);
       this.template_ = html;
